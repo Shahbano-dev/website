@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+body{
+    font-family: sans-serif;
+     
+  }
+nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 70px;
+    background: rgba(27,31,34, 0.85);
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: rgba(27,31,34, 0.85);
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid rgba(27,31,34, 0.85);
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  
+body{
+    background-color:rgba(27,31,34, 0.85) ;
+}
+.div1{
+    width: 90%;
+    height: 500px;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-right: 120px;
+    box-shadow: 3px 4px 15px 5px rgb(27, 31, 34);
+    background-image: url('https://claimflights.com/wp-content/uploads/Beautiful-place.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: slider;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+@keyframes slider{
+    0%{
+
+    }
+    35%{
+        background-image: url('https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg');
+    }
+    75%{
+        background-image: url('http://s1.travix.com/blog/as/asia-vietnam-halong-bay-rocks-nature-boats-medium.jpg');
+    }
+}
+
+ /* 320px — 480px: Mobile devices. */
+
+ @media (min-width: 320px) and (max-width: 480px) {
+    .div1{
+        width: 100%;
+       height: 200px; 
+       margin-left: 15px;
+    }
+    .footer{
+        height: 900px;
+        width: 100%;
+    }
+     .div2{
+        height: 400px;
+     }
+     .logo{
+        margin-right: 40px;
+     }
+   }
+
+/* 481px — 768px: iPads, Tablets. */
+
+@media (min-width: 481px) and (max-width: 768px) {
+   
+    .div1{
+        width: 90%;
+       height: 250px; 
+       margin-left: 20px;
+    }
+    .footer{
+        height:900px;
+        width: 500px
+    }
+}
+/* 769px — 1024px: Small screens, laptops. */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .div1{
+        width: 90%;
+       height: 350px; 
+       margin-left: 40px;
+    }
+}
+
+/* 1025px — 1200px: Desktops, large screens. */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .div1{
+        width: 90%;
+        height: 500px;
+    }
+}
+
+.footer{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:rgba(27,31,34, 0.85);
+    position: absolute;
+}
+.div2{
+    width: 350px;
+    height: 300px;
+    color: #fff;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    position: relative;
+
+    
+}
+.div2 h1{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.div2 h3{
+     
+    margin-left: 15px;
+}
+ 
+.div3{
+    width: 350px;
+    height: 300px;
+    background-color:rgba(27,31,34, 0.85);
+    color: white;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.div4{
+    height: 40px;
+    width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    color: white;
+    background-color:rgba(27,31,34, 0.85) ;
+    position: relative;
+
+}
+.container{
+    width: 360px;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-content: center;
+    background-color:rgba(27,31,34, 0.95) ;
+    position: relative;
+ }
+ .child{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+     margin: 5px;
+ }
+ .imges{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+ }
+ .logo{
+    margin-left: 40px;
+    margin-top: 20px;
+    position: relative;
+ }
+ .Contact{
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    
+ }
+ .div3 h1{
+    margin-left: 50px;
+    margin-top: 30px;
+ }
+ .media{
+    height: 100px;
+    width: 350px;
+    background-color:rgba(27,31,34, 0.85);
+    display: flex;
+    justify-content: center;
+ }
+ .social{
+    width: 100px;
+    height: 100px;
+    background-color:rgba(27,31,34, 0.85);
+ }
+ .social img{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 25px;
+ }
+ 
+ .booking{
+    width: 900px;
+    height:700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    align-content: center;
+    background-color:rgba(27,31,34, 0.95) ;
+    position: relative;
+ }
+ .book{
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+    text-align: center;
+     margin: 5px;
+     box-shadow: 10px 10px 15px 5px rgb(51, 55, 58);
+      margin-left: 30px;
+ }
+  .imges1{
+    width: 250px;
+    height:200px;
+    border-radius: 20px 20px 0px 0px;
+  }
+ .pack{
+    width: 100%;
+    color: white;
+     margin-left: 350px;
+ }
+ .div10{
+    color: white;
+    margin-top: 10px;
+ }
+ .span1{
+    color: red;
+     
+ }
